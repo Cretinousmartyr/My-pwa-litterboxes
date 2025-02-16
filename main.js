@@ -1,3 +1,5 @@
+document.body.insertAdjacentHTML('afterbegin', '<p style="color:red;">Page Loaded</p>');
+
 const CACHE_NAME = 'litterbox-cache-v1';
 const urlsToCache = [
   './index.html',
