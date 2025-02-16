@@ -1,0 +1,85 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+#litterBoxesContainer {
+  padding: 1em;
+}
+
+.litter-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.box-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.edit-icon {
+  font-size: 1em;
+  margin-right: 1em;
+}
+
+.name-input {
+  font-size: 1.2em;
+  padding: 0.2em;
+}
+
+/* Calendar grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-cell {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.calendar-cell:hover {
+  background-color: #f0f0f0;
+}
+
+.calendar-cell.today {
+  border: 2px solid #4CAF50;
+}
+
+/* Status styles */
+.calendar-cell.scooped {
+  background-color: #d1e7dd; /* Light green */
+}
+
+.calendar-cell.cleaned {
+  background-color: #cfe2ff; /* Light blue */
+}
+
+.calendar-cell.scoopedAuto {
+  background-color: #e2e3e5; /* Light grey */
+}
